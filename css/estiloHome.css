@@ -1,11 +1,17 @@
+#iconeHeader{
+  width: 650px;
+}
+
 body {
   margin: 0;
   padding: 0;
-
-  /* make it look decent enough */
   background: #232323;
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 #menuToggle {
@@ -209,12 +215,75 @@ header {
   padding: 15px;
 }
 
+/* CARDS */
+
 .card {
+  color: rgb(255, 255, 255);
   width: 100%;
-  height: 250px;
+  height: 300px;
   width: 356px;
-  border: 3px solid #0b0b0b; /* Cor sólida */
-  border-radius: 10px; /* Borda arredondada */
-  padding: 10px; /* Espaçamento interno para o conteúdo */
-  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); /* Sombra */
+  border: 3px solid #0b0b0b;
+  /* Cor sólida */
+  border-radius: 10px;
+  /* Borda arredondada */
+  padding: 10px;
+  /* Espaçamento interno para o conteúdo */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  /* Sombra */
+}
+
+.card-body {
+  position: relative;
+  z-index: 2;
+}
+
+/* CARD1 */
+
+#card1 {
+  background-size: cover;
+}
+
+#card1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Preto semi-transparente */
+  z-index: 1;
+}
+
+/* CARD 2 */
+
+#card2 {
+  background-size: cover;
+}
+
+#card2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Preto semi-transparente */
+  z-index: 1;
+}
+
+/* CARD 3 */
+
+#card3 {
+  background-size: cover;
+}
+
+#card3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Preto semi-transparente */
+  z-index: 1;
 }
