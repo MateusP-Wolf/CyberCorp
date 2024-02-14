@@ -1,15 +1,41 @@
-#iconeHeader{
+/* Barra de Rolagem */
+body::-webkit-scrollbar {
+  width: 1em;
+  -webkit-overflow-scrolling: touch; /* deixa a rolagem suave */
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+/* Header */
+#iconeHeader {
   width: 650px;
 }
 
+#header {
+  background-color: #434343;
+  height: 110px;
+  width: 1350px;
+  position: fixed;
+}
+
+/* Body */
 body {
   margin: 0;
   padding: 0;
   background: #232323;
   color: #cdcdcd;
   font-family: "Avenir Next", "Avenir", sans-serif;
+  -webkit-overflow-scrolling: touch;
 }
 
+/* Menu */
 a {
   text-decoration: none;
 }
@@ -182,13 +208,7 @@ header {
   font-family: 'Titulo';
 }
 
-#header {
-  background-color: #434343;
-  height: 110px;
-  width: 1350px;
-  position: fixed;
-}
-
+/* Body 2 */
 #esquerdoImagem {
   position: relative;
 }
@@ -222,7 +242,7 @@ header {
   width: 100%;
   height: 300px;
   width: 356px;
-  border: 3px solid #0b0b0b;
+  border: 2px solid #0b0b0b;
   /* Cor sólida */
   border-radius: 10px;
   /* Borda arredondada */
@@ -241,6 +261,12 @@ header {
 
 #card1 {
   background-size: cover;
+  background-size: 100% 100%;
+  transition: background-size 0.7s;
+}
+
+#coluna1 :hover {
+  background-size: 120% 150%;
 }
 
 #card1::before {
@@ -250,14 +276,22 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Preto semi-transparente */
+  background: rgba(0, 0, 0, 0.7);
+  /* Preto semi-transparente */
   z-index: 1;
+
 }
 
 /* CARD 2 */
 
 #card2 {
   background-size: cover;
+  background-size: 100% 100%;
+  transition: background-size 0.7s;
+}
+
+#coluna2 :hover {
+  background-size: 120% 150%;
 }
 
 #card2::before {
@@ -267,23 +301,44 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Preto semi-transparente */
+  background: rgba(0, 0, 0, 0.7);
+  /* Preto semi-transparente */
   z-index: 1;
 }
 
 /* CARD 3 */
 
 #card3 {
+  /* A propriedade background-size define o tamanho da imagem de fundo. */
+  /* O valor 'cover' faz com que a imagem de fundo seja redimensionada para cobrir completamente o elemento, mesmo que isso signifique que a imagem será cortada. */
   background-size: cover;
+  /* Aqui, a imagem de fundo é redimensionada para preencher completamente o elemento. */
+  background-size: 100% 100%;
+  /* A propriedade transition faz com que as mudanças na propriedade background-size ocorram suavemente ao longo de 0.7 segundos. */
+  transition: background-size 0.7s;
+}
+
+#coluna3 :hover {
+  /* Quando o mouse passa por cima do elemento com o id 'coluna3', a imagem de fundo é redimensionada para 120% da largura original e 150% da altura original. */
+  background-size: 120% 150%;
 }
 
 #card3::before {
+  /* A propriedade content é usada com os pseudo-elementos ::before e ::after, para inserir conteúdo gerado. Neste caso, está vazio. */
   content: "";
+  /* A propriedade position define como um elemento é posicionado no layout. O valor 'absolute' posiciona o elemento em relação ao elemento pai mais próximo que tem uma posição diferente de 'static'. */
   position: absolute;
+  /* A propriedade top define a distância do topo do elemento em relação ao topo do seu elemento pai posicionado mais próximo. */
   top: 0;
+  /* A propriedade left define a distância da esquerda do elemento em relação à esquerda do seu elemento pai posicionado mais próximo. */
   left: 0;
+  /* A propriedade width define a largura do elemento. */
   width: 100%;
+  /* A propriedade height define a altura do elemento. */
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Preto semi-transparente */
+  /* A propriedade background define a cor de fundo do elemento. Neste caso, é um preto semi-transparente. */
+  background: rgba(0, 0, 0, 0.7);
+  /* Preto semi-transparente */
+  /* A propriedade z-index define a ordem de empilhamento dos elementos. Um elemento com um valor maior de z-index estará na frente de um elemento com um valor menor. */
   z-index: 1;
 }
