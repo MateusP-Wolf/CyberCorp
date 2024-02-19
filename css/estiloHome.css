@@ -20,6 +20,7 @@
 /* Body 2 */
 #esquerdoImagem {
   position: relative;
+  width: 100%;
 }
 
 #esquerdoImagem::after {
@@ -32,6 +33,7 @@
   height: 100%;
   z-index: 1;
 }
+
 
 .textoSobreVideo {
   position: absolute;
