@@ -1,6 +1,6 @@
 function carregar() {
     var video = document.getElementById("fundoDivPrincipal")
-    video.playbackRate = 0.7;
+    video.playbackRate = 1;
 }
 
 function ibi() {
@@ -16,3 +16,9 @@ function ibi() {
     }
 
 }
+
+function fecharDiv(id) {
+    var div = document.getElementById(id);
+    div.classList.add('fadeOut');
+    setTimeout(function() { div.style.display = 'none'; }, 1000);
+  }

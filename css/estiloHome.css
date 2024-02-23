@@ -3,6 +3,19 @@
   padding-top: 120px;
   text-align: center;
   font-size: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: rgb(33, 33, 33);
+}
+
+.fadeOut {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; display: none; }
 }
 
 .closebtn {
