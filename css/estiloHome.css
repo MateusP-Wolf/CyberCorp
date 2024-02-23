@@ -1,3 +1,15 @@
+#textoPandemia{
+  padding: 15px;
+  padding-top: 120px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.closebtn {
+  float: right; /* Posiciona o botão de fechar à direita */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
 /* Overlay */
 #overlay {
   /* Ele será inicialmente escondido */
