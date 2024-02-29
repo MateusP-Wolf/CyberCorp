@@ -182,3 +182,7 @@
 #footer{
   margin-top: -25px;
 }
+
+.row-no-gutters{
+  padding: 15px;
+}
